@@ -1,8 +1,12 @@
 const btn_menu = document.getElementById('btn-menu');
+const open_menu = document.getElementById('open-menu');
+const close_menu = document.getElementById('close-menu');
 const menu = document.getElementById('menu');
 
 btn_menu.addEventListener('click', () =>{
   menu.classList.toggle('hidden');
+  open_menu.classList.toggle('hidden');
+  close_menu.classList.toggle('hidden');
 })
 
 // ADD CLASS ON NAVBAR WHEN SCROLL

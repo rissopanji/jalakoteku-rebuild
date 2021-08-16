@@ -18,4 +18,8 @@
     color: #F89F39;
     border-bottom: 1.5px solid #F89F39;
   }
+
+  .nav-active:hover {
+    color: #F89F39;
+  }
 }

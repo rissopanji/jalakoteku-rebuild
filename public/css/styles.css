@@ -1,3 +1,7 @@
 .h-main {
   min-height: calc(100vh - 72px);
 }
+
+.w-container {
+  max-width: 1094px;
+}

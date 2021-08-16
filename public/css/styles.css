@@ -5,3 +5,17 @@
 .w-container {
   max-width: 1094px;
 }
+
+@media (max-width: 1023px) {
+  .nav-active {
+    color: #333333;
+    background-color: #D9D7D4;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-active {
+    color: #F89F39;
+    border-bottom: 1.5px solid #F89F39;
+  }
+}

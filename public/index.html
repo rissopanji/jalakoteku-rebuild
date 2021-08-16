@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jalakoteku</title>
+  <!-- JQUERRY -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
   <!-- Tailwind CSS -->
   <link rel="stylesheet" href="./css/tailwind.css">
   <!-- Custom CSS -->
@@ -22,25 +25,27 @@
 
 <body class="bg-gray0">
   <!-- HEADER -->
-  <header id="header" class="lg:fixed w-full text-base ">
-    <nav class="bg-gray1 lg:bg-gray0 shadow-md lg:shadow-none text-gray-70">
-      <div class="max-w-7xl mx-auto px-4 xl:px-24">
-        <div class="flex flex-col lg:flex-row justify-between lg:items-center py-4 md:py-3 lg:py-2 gap-2.5">
+  <header id="header" class="lg:fixed w-full">
+    <nav
+      class="bg-gray1 lg:bg-gray0 shadow-md lg:shadow-none text-gray-70 transition-all duration-500 ease-in-out px-4 xl:px-24 py-4 md:py-3 lg:py-3 text-base lg:text-base">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col lg:flex-row justify-between lg:items-center gap-2.5">
           <div id="brand" class="uppercase font-semibold text-5xl flex justify-between">
             <a href="#">
-              <img src="assets/icons/jalakoteku-logo-2.svg" alt="Jalakoteku" class="h-9 md:h-12 lg:h-14">
+              <img id="logobrand" src="assets/icons/jalakoteku-logo-2.svg" alt="Jalakoteku"
+                class="h-9 md:h-12 lg:h-14 transition-all duration-500 ease-in-out">
             </a>
             <button id="btn-menu" class="lg:hidden text-gray3 hover:text-black0">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-9 auto" viewBox="0 0 20 20" fill="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 auto" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd"
                   d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
                   clip-rule="evenodd" />
               </svg>
             </button>
           </div>
-          <div id="menu" class="hidden lg:flex flex-col lg:flex-row gap-3 lg:gap-12 items-center">
+          <div id="menu" class="hidden lg:flex flex-col-reverse lg:flex-row gap-6 lg:gap-12 items-center">
             <div class="flex flex-col lg:flex-row gap-3 lg:gap-12">
-              <a href="#" class="block  hover:text-black0 text-gray3">
+              <a href="#" class="block  hover:text-black0 text-gray3" aria-current="page">
                 Home
               </a>
               <a href="#" class="block hover:text-black0 text-gray3">
@@ -56,7 +61,7 @@
                 About Us
               </a>
             </div>
-            <div class="flex flex-col lg:flex-row gap-3 lg:gap-8 mt-3 lg:mt-0">
+            <div class="flex lg:flex-row gap-3 lg:gap-8 mt-5 lg:mt-0">
               <a href="#"
                 class="block text-orange2 bg-transparent border-solid border border-orange2 rounded-md px-3 py-1 hover:bg-orange1">
                 Masuk
@@ -90,9 +95,6 @@
 
   <!-- JAVASCRIPT -->
   <script src="script/main.js"></script>
-  <!-- JQUERRY -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous"></script>
 </body>
 
 </html>

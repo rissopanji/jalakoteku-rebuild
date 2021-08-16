@@ -27,14 +27,11 @@
   <!-- HEADER -->
   <header id="header" class="lg:fixed w-full">
     <nav
-      class="bg-gray1 lg:bg-gray0 shadow-md lg:shadow-none text-gray-70 transition-all duration-500 ease-in-out px-4 xl:px-24 py-4 md:py-3 lg:py-3 text-base lg:text-base">
+      class="bg-gray1 lg:bg-gray0 shadow-md lg:shadow-none text-gray-70 transition-all duration-500 ease-in-out px-2 lg:px-4 xl:px-24 py-2 md:py-3 lg:py-3 text-base lg:text-base">
       <div class="max-w-7xl mx-auto">
-        <div class="flex flex-col lg:flex-row justify-between lg:items-center gap-2.5">
-          <div id="brand" class="uppercase font-semibold text-5xl flex justify-between">
-            <a href="#">
-              <img id="logobrand" src="assets/icons/jalakoteku-logo-2.svg" alt="Jalakoteku"
-                class="h-9 md:h-12 lg:h-14 transition-all duration-500 ease-in-out">
-            </a>
+        <div class="relative flex items-center justify-between">
+          <div class="absolute inset-y-0 left-0 flex items-center lg:hidden">
+            <!-- MENU BUTTON -->
             <button id="btn-menu" class="lg:hidden text-gray3 hover:text-black0">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-7 auto" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd"
@@ -43,34 +40,79 @@
               </svg>
             </button>
           </div>
-          <div id="menu" class="hidden lg:flex flex-col-reverse lg:flex-row gap-6 lg:gap-12 items-center">
-            <div class="flex flex-col lg:flex-row gap-3 lg:gap-12">
-              <a href="#" class="block  hover:text-black0 text-gray3" aria-current="page">
-                Home
-              </a>
-              <a href="#" class="block hover:text-black0 text-gray3">
-                Product
-              </a>
-              <a href="#" class="block hover:text-black0 text-gray3">
-                Virtual Franchise
-              </a>
-              <a href="#" class="block hover:text-black0 text-gray3">
-                Contact Us
-              </a>
-              <a href="#" class="block hover:text-black0 text-gray3">
-                About Us
+          <div class="flex-1 flex items-center justify-center lg:items-stretch lg:justify-between">
+            <!-- LOGO BRAND -->
+            <div id="brand" class="flex-shrink-0 flex items-center">
+              <a href="#">
+                <img id="logobrand" src="assets/icons/jalakoteku-logo-2.svg" alt="Jalakoteku"
+                  class="h-9 md:h-12 lg:h-14 transition-all duration-500 ease-in-out">
               </a>
             </div>
-            <div class="flex lg:flex-row gap-3 lg:gap-8 mt-5 lg:mt-0">
-              <a href="#"
-                class="block text-orange2 bg-transparent border-solid border border-orange2 rounded-md px-3 py-1 hover:bg-orange1">
-                Masuk
-              </a>
-              <a href="#" class="block text-gray0 bg-orange2 border-solid border border-orange2 rounded-md px-3 py-1">
-                Daftar
-              </a>
+            <!-- !LOGO BRAND -->
+
+            <!-- DESKTOP MENU -->
+            <div class="hidden lg:flex flex-col-reverse lg:flex-row gap-6 lg:gap-12 items-center">
+              <div class="flex flex-col lg:flex-row gap-3 lg:gap-12">
+                <a href="#" class="block  hover:text-black0 text-gray3" aria-current="page">
+                  Home
+                </a>
+                <a href="#" class="block hover:text-black0 text-gray3">
+                  Product
+                </a>
+                <a href="#" class="block hover:text-black0 text-gray3">
+                  Virtual Franchise
+                </a>
+                <a href="#" class="block hover:text-black0 text-gray3">
+                  Contact Us
+                </a>
+                <a href="#" class="block hover:text-black0 text-gray3">
+                  About Us
+                </a>
+              </div>
+              <div class="flex lg:flex-row gap-3 lg:gap-8 mt-5 lg:mt-0">
+                <a href="#"
+                  class="block text-orange2 bg-transparent border-solid border border-orange2 rounded-md px-3 py-1 hover:bg-orange1">
+                  Masuk
+                </a>
+                <a href="#" class="block text-gray0 bg-orange2 border-solid border border-orange2 rounded-md px-3 py-1">
+                  Daftar
+                </a>
+              </div>
             </div>
+            <!-- !DESKTOP MENU -->
+
+            <!-- MOBILE SIGN IN / LOGIN -->
+            <div class="absolute inset-y-0 right-0 flex items-center text-xs">
+              <div class="flex lg:hidden space-x-2">
+                <a href="#"
+                  class="block text-orange2 bg-transparent border-solid border border-orange2 rounded-md px-2 py-1 hover:bg-orange1">
+                  Masuk
+                </a>
+                <a href="#" class="block text-gray0 bg-orange2 border-solid border border-orange2 rounded-md px-3 py-1">
+                  Daftar
+                </a>
+              </div>
+            </div>
+            <!-- !MOBILE SIGN IN / LOGIN -->
           </div>
+        </div>
+        <!-- DROPDOWN MENU -->
+        <div id="menu" class="hidden lg:hidden space-y-1 py-4">
+            <a href="#" class="block  hover:bg-gray2 hover:text-black0 rounded-lg p-2 text-gray3">
+              Home
+            </a>
+            <a href="#" class="block hover:bg-gray2 hover:text-black0 rounded-lg p-2 text-gray3">
+              Product
+            </a>
+            <a href="#" class="block hover:bg-gray2 hover:text-black0 rounded-lg p-2 text-gray3">
+              Virtual Franchise
+            </a>
+            <a href="#" class="block hover:bg-gray2 hover:text-black0 rounded-lg p-2 text-gray3">
+              Contact Us
+            </a>
+            <a href="#" class="block hover:bg-gray2 hover:text-black0 rounded-lg p-2 text-gray3">
+              About Us
+            </a>
         </div>
       </div>
     </nav>
@@ -78,9 +120,9 @@
   <!-- !HEADER -->
 
   <!-- MAIN -->
-  <main id="main" class="h-main lg:pt-20">
+  <main id="main" class="h-screen lg:pt-20">
     <div class="max-w-7xl mx-auto py-5 px-4 xl:px-24">
-      MAIN
+
     </div>
   </main>
   <!-- !MAIN -->

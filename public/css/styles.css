@@ -13,7 +13,7 @@
 .owl-prev, .owl-next {
   background-color: transparent !important;
   position: absolute;
-  top: 30%;
+  top: 35%;
 }
 
 .owl-prev span, .owl-next span {

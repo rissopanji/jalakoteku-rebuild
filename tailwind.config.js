@@ -20,6 +20,9 @@ module.exports = {
       },
       fontFamily: {
         inter: ['Inter']
+      },
+      screens: {
+        'xs': '320px'
       }
     },
   },

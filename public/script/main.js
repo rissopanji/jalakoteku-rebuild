@@ -23,3 +23,22 @@ $(window).on('scroll', function () {
     $('#logobrand').addClass('lg:h-14');
   }
 })
+
+// CAROUSEL
+$(document).ready(function(){
+  $('.owl-carousel').owlCarousel({
+    items:1,
+    loop: true,
+    margin:10,
+    autoHeight:false,
+    responsiveClass: true,
+    responsive: {
+      0 : {
+        nav: false,
+      },
+      1024 : {
+        nav: true,
+      }
+    }
+  });
+});

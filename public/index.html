@@ -20,11 +20,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
+  <!-- OWL CAROUSEL CSS -->
+  <link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.theme.default.css">
+
 </head>
 
 <body class="bg-gray0 font-inter">
   <!-- HEADER -->
-  <header id="header" class="lg:fixed w-full">
+  <header id="header" class="lg:fixed w-full z-50">
     <nav
       class="bg-gray1 lg:bg-gray0 shadow-md lg:shadow-none text-gray-70 transition-all duration-500 ease-in-out py-2 md:py-3 lg:py-3 text-base lg:text-base">
       <div class="w-container mx-auto px-2">
@@ -121,9 +125,25 @@
   <!-- !HEADER -->
 
   <!-- MAIN -->
-  <main id="main" class="h-main lg:pt-20">
-    <div class="w-container mx-auto py-5 px-2">
-      MAIN
+  <main id="main" class="h-main lg:pt-20 text-gray3">
+    <div class="w-container mx-auto pt-0 md:pt-12 pb-16 px-2">
+      <!-- JUMBOTRON -->
+      <div class="relative">
+        <div class="flex flex-col-reverse md:flex-row items-center md:space-x-5">
+          <div class="absolute md:relative z-10 md:z-auto bottom-7 xs:bottom-15 sm:bottom-1/4 space-y-3 md:space-y-5 md:flex-1">
+            <div>
+              <h1 class="font-semibold text-3xl md:text-4xl capitalize max-w-sm">Mulai Bisnis Onlinemu Dari Rumah Saja</h1>
+              <p class="font-normal text-xs md:text-sm capitalize max-w-sm">Mulai usaha onlinemu dengan jalakoteku bersama dengan ratusan mitra lainnya di seluruh Indonesia dan tim manajemen Jalakoteku cukup dari rumah saja.</p>
+              <button class="bg-orange2 px-3 py-1 text-sm md:text-base rounded-md text-gray0">
+                Gabung Sekarang
+              </button>
+            </div>
+          </div>
+          <div class="w-full md:w-auto md:flex-1">
+            <img src="assets/images/Home_Section1_1.jpg" alt="banner" class="opacity-20 md:opacity-100 h-72 w-full object-cover md:h-auto md:w-auto md:rounded-3xl md:max-h-96 md:max-w-96 md:ml-auto">
+          </div>
+        </div>
+      </div>
     </div>
   </main>
   <!-- !MAIN -->
@@ -142,19 +162,23 @@
           </div>
           <div id="social-media" class="flex space-x-2 lg:space-x-3 items-center text-xs">
             <!-- INTAGRAM -->
-            <a href="#" class="h-6 w-6 bg-gray4 text-gray1 flex items-center rounded-full transform hover:scale-110 transition ease-in-out">
+            <a href="#"
+              class="h-6 w-6 bg-gray4 text-gray1 flex items-center rounded-full transform hover:scale-110 transition ease-in-out">
               <i class="fab fa-instagram mx-auto"></i>
             </a>
             <!-- WHATSAPP -->
-            <a href="#" class="h-6 w-6 bg-gray4 text-gray1 flex items-center rounded-full transform hover:scale-110 transition ease-in-out">
+            <a href="#"
+              class="h-6 w-6 bg-gray4 text-gray1 flex items-center rounded-full transform hover:scale-110 transition ease-in-out">
               <i class="fab fa-whatsapp mx-auto"></i>
             </a>
             <!-- EMAIL -->
-            <a href="#" class="h-6 w-6 bg-gray4 text-gray1 flex items-center rounded-full transform hover:scale-110 transition ease-in-out">
+            <a href="#"
+              class="h-6 w-6 bg-gray4 text-gray1 flex items-center rounded-full transform hover:scale-110 transition ease-in-out">
               <i class="far fa-envelope mx-auto"></i>
             </a>
             <!-- LINKEDIN -->
-            <a href="#" class="h-6 w-6 bg-gray4 text-gray1 flex items-center rounded-full transform hover:scale-110 transition ease-in-out">
+            <a href="#"
+              class="h-6 w-6 bg-gray4 text-gray1 flex items-center rounded-full transform hover:scale-110 transition ease-in-out">
               <i class="fab fa-linkedin-in mx-auto"></i>
             </a>
           </div>
@@ -224,6 +248,9 @@
 
   <!-- JAVASCRIPT -->
   <script src="script/main.js"></script>
+  <!-- OWL CAROUSEL JS -->
+  <script src="../node_modules/owl.carousel/dist/owl.carousel.js"></script>
+  <script src="../node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
 </body>
 
 </html>

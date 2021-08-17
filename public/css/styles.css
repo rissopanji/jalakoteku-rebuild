@@ -2,6 +2,25 @@
   max-width: 1094px;
 }
 
+.owl-prev {
+  left: 5px;
+}
+
+.owl-next {
+  right: 5px;
+}
+
+.owl-prev, .owl-next {
+  background-color: transparent !important;
+  position: absolute;
+  top: 35%;
+}
+
+.owl-prev span, .owl-next span {
+  font-size: 40px;
+  color: #756B5E;
+}
+
 /* PHONE SCREEN */
 @media (max-width: 1023px) {
   .h-main {

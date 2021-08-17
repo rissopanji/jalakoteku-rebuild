@@ -16,6 +16,7 @@ module.exports = {
       // Custom Color
       orange1: "#FFF3E5",
       orange2: "#F89F39",
+      orange2b: "#F79322",
       gray0: "#F7F6F5",
       gray1: "#EFEDEB",
       gray2: "#D9D7D4",

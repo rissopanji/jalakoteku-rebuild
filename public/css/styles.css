@@ -4,6 +4,9 @@
 
 /* PHONE SCREEN */
 @media (max-width: 1023px) {
+  .h-main {
+    min-height: calc(100vh - 892px); /* 72 + 252 = 324 */
+  }
   .nav-active {
     color: #333333;
     background-color: #D9D7D4;

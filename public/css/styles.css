@@ -10,10 +10,16 @@
   right: 5px;
 }
 
-.owl-prev, .owl-next {
+#home1 .owl-prev, #home1 .owl-next {
   background-color: transparent !important;
   position: absolute;
   top: 35%;
+}
+
+#home2 .owl-prev, #home2 .owl-next {
+  background-color: transparent !important;
+  position: absolute;
+  top: 30%;
 }
 
 .owl-prev span, .owl-next span {

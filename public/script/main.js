@@ -26,10 +26,26 @@ $(window).on('scroll', function () {
 
 // CAROUSEL
 $(document).ready(function(){
-  $('.owl-carousel').owlCarousel({
+  $('#home1.owl-carousel').owlCarousel({
     items:1,
     loop: true,
-    margin:10,
+    margin:25,
+    autoHeight:false,
+    responsiveClass: true,
+    responsive: {
+      0 : {
+        nav: false,
+      },
+      1024 : {
+        nav: true,
+      }
+    },
+  });
+  $('#home2.owl-carousel').owlCarousel({
+    items:1,
+    loop: true,
+    margin:25,
+    dots: false,
     autoHeight:false,
     responsiveClass: true,
     responsive: {

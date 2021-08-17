@@ -35,6 +35,11 @@ $(document).ready(function(){
     responsive: {
       0 : {
         nav: false,
+        dots: true,
+      },
+      499 : {
+        nav: true,
+        dots : true,
       },
       1024 : {
         nav: true,

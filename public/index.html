@@ -11,6 +11,8 @@
     crossorigin="anonymous"></script>
   <!-- Tailwind CSS -->
   <link rel="stylesheet" href="./css/tailwind.css">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./css/styles.css">
   <!-- FONT -->
@@ -33,11 +35,12 @@
           <div class="absolute inset-y-0 left-0 flex items-center lg:hidden">
             <!-- MENU BUTTON -->
             <button id="btn-menu" class="lg:hidden text-gray3 hover:text-black0">
-              <svg id="open-menu" xmlns="http://www.w3.org/2000/svg" class="block h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
+              <svg id="open-menu" xmlns="http://www.w3.org/2000/svg" class="block h-8 w-8" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
               </svg>
-              <svg id="close-menu" xmlns="http://www.w3.org/2000/svg" class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg id="close-menu" xmlns="http://www.w3.org/2000/svg" class="hidden h-6 w-6" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
@@ -47,14 +50,14 @@
             <div id="brand" class="flex-shrink-0 flex items-center">
               <a href="#">
                 <img id="logobrand" src="assets/icons/jalakoteku-logo-2.svg" alt="Jalakoteku"
-                  class="h-9 md:h-12 lg:h-14 transition-all duration-500 ease-in-out">
+                  class="h-11 md:h-12 lg:h-14 transition-all duration-500 ease-in-out">
               </a>
             </div>
             <!-- !LOGO BRAND -->
 
             <!-- DESKTOP MENU -->
-            <div class="hidden lg:flex flex-col-reverse lg:flex-row gap-6 lg:gap-12 items-center">
-              <div class="flex space-x-10">
+            <div class="hidden lg:flex gap-6 lg:gap-12 items-center">
+              <div class="flex space-x-12">
                 <a href="#" class="block  hover:text-black0 text-gray3 nav-active" aria-current="page">
                   Home
                 </a>
@@ -87,7 +90,7 @@
             <!-- MOBILE SIGN IN / LOGIN -->
             <div class="lg:hidden absolute inset-y-0 right-0 flex items-center">
               <a href="#" class="text-gray3 hover:text-gray4 hover:border-gray4 cursor-pointer">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
@@ -129,9 +132,79 @@
   <!-- !MAIN -->
 
   <!-- FOOTER -->
-  <footer id="footer">
-    <div class="w-container mx-auto py-5 px-2">
-      FOOTER
+  <footer id="footer" class="bg-gray1 shadow-md">
+    <div class="w-container mx-auto py-11 px-2">
+      <div class="flex flex-col lg:flex-row justify-between space-y-6">
+        <div class="mx-auto lg:mx-0 space-y-4 lg:space-y-5 items-center">
+          <div id="foot-logo">
+            <a href="#">
+              <img src="assets/icons/jalakoteku-logo.svg" alt="" class="h-28">
+            </a>
+          </div>
+          <div id="social-media" class="flex justify-between items-center text-xs">
+            <div class="h-6 w-6 bg-gray4 text-gray1 flex items-center rounded-full">
+              <i class="fab fa-instagram mx-auto"></i>
+            </div>
+            <div class="h-6 w-6 bg-gray4 text-gray1 flex items-center rounded-full">
+              <i class="fab fa-whatsapp mx-auto"></i>
+            </div>
+            <div class="h-6 w-6 bg-gray4 text-gray1 flex items-center rounded-full">
+              <i class="far fa-envelope mx-auto"></i>
+            </div>
+            <div class="h-6 w-6 bg-gray4 text-gray1 flex items-center rounded-full">
+              <i class="fab fa-linkedin-in mx-auto"></i>
+            </div>
+          </div>
+        </div>
+        <div class="text-gray3 space-y-3">
+          <h1 class="font-semibold text-lg">Bantuan</h1>
+          <ul class="space-y-2">
+            <li class="font-normal text-sm">Hubungi Kami</li>
+            <li class="font-normal text-sm">Cari Outlet</li>
+            <li class="font-normal text-sm">FAQ</li>
+          </ul>
+        </div>
+        <div class="text-gray3 space-y-3">
+          <h1 class="font-semibold text-lg">Produk</h1>
+          <ul class="space-y-2">
+            <li class="font-normal text-sm">Menu</li>
+          </ul>
+        </div>
+        <div class="text-gray3 space-y-3">
+          <h1 class="font-semibold text-lg">Mitra</h1>
+          <ul class="space-y-2">
+            <li class="font-normal text-sm">Gabung Mitra</li>
+            <li class="font-normal text-sm">Bantuan Mitra</li>
+          </ul>
+        </div>
+        <div class="text-gray3 space-y-3">
+          <h1 class="font-semibold text-lg">Kontak Kami</h1>
+          <ul class="space-y-2">
+            <li class="font-normal text-sm space-x-3 flex items-center">
+              <div class="h-6 w-6 bg-gray4 text-gray1 flex items-center rounded-full text-xs">
+                <i class="fab fa-whatsapp mx-auto"></i>
+              </div>
+              <span>085368xxxxx</span>
+            </li>
+            <li class="font-normal text-sm space-x-3 flex items-center">
+              <div class="h-6 w-6 bg-gray4 text-gray1 flex items-center rounded-full text-xs">
+                <i class="far fa-envelope mx-auto"></i>
+              </div>
+              <span>jalakoteku@gmail.com</span>
+            </li>
+            <li class="font-normal text-sm flex space-x-3">
+              <div class="h-6 w-6 bg-gray4 text-gray1 flex items-center rounded-full">
+                <i class="far fa-envelope mx-auto"></i>
+              </div>
+              <span>
+                Jalakotekku HQ <br>
+                Jl. punya kita no.1-3, bandung, <br>
+                Jawa Barat, indonesia. <br>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </footer>
   <!-- !FOOTER -->

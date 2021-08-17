@@ -37,10 +37,6 @@ $(document).ready(function(){
         nav: true,
         dots: false,
       },
-      499 : {
-        nav: true,
-        dots : false,
-      },
       1024 : {
         nav: true,
       }
@@ -58,8 +54,8 @@ $(document).ready(function(){
         nav: false,
         dots: true
       },
-      768 : {
-        nav: true,
+      1024 : {
+        nav: true
       }
     }
   });

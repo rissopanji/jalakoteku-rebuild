@@ -1,11 +1,8 @@
-.h-main {
-  min-height: calc(100vh - 72px);
-}
-
 .w-container {
   max-width: 1094px;
 }
 
+/* PHONE SCREEN */
 @media (max-width: 1023px) {
   .nav-active {
     color: #333333;
@@ -13,7 +10,13 @@
   }
 }
 
+/* DESKTOP SCREEN */
 @media (min-width: 1024px) {
+  /* MINIMUM HEIGHT MAIN CONTENT IN DESKTOP SCREEN */
+  .h-main {
+    min-height: calc(100vh - 252px); /* 72 + 252 = 324 */
+  }
+
   .nav-active {
     color: #F89F39;
     border-bottom: 1.5px solid #F89F39;

@@ -16,16 +16,13 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./css/styles.css">
   <!-- FONT -->
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-
-    body {
-      font-family: 'Inter', sans-serif;
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 </head>
 
-<body class="bg-gray0">
+<body class="bg-gray0 font-inter">
   <!-- HEADER -->
   <header id="header" class="lg:fixed w-full">
     <nav
@@ -134,14 +131,16 @@
   <!-- FOOTER -->
   <footer id="footer" class="bg-gray1 shadow-md">
     <div class="w-container mx-auto py-11 px-2">
-      <div class="flex flex-col lg:flex-row justify-between space-y-6 lg:space-y-0 transition-all duration-500 ease-in-out">
-        <div class="mx-auto lg:mx-0 space-y-4 lg:space-y-5 items-center">
+      <div
+        class="flex flex-col lg:flex-row justify-between space-y-6 lg:space-y-0 transition-all duration-500 ease-in-out">
+        <div class="flex flex-col space-y-4 lg:space-y-5 items-center">
           <div id="foot-logo">
             <a href="#">
-              <img src="assets/icons/jalakoteku-logo.svg" alt="" class="h-24 lg:h-28 transition-all duration-500 ease-in-out">
+              <img src="assets/icons/jalakoteku-logo.svg" alt=""
+                class="h-24 lg:h-28 transition-all duration-500 ease-in-out">
             </a>
           </div>
-          <div id="social-media" class="flex justify-between items-center text-xs">
+          <div id="social-media" class="flex justify-between items-center text-xs space-x-2">
             <div class="h-6 w-6 bg-gray4 text-gray1 flex items-center rounded-full">
               <i class="fab fa-instagram mx-auto"></i>
             </div>

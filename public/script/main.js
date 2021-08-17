@@ -34,12 +34,12 @@ $(document).ready(function(){
     responsiveClass: true,
     responsive: {
       0 : {
-        nav: false,
-        dots: true,
+        nav: true,
+        dots: false,
       },
       499 : {
         nav: true,
-        dots : true,
+        dots : false,
       },
       1024 : {
         nav: true,
@@ -56,8 +56,9 @@ $(document).ready(function(){
     responsive: {
       0 : {
         nav: false,
+        dots: true
       },
-      1024 : {
+      768 : {
         nav: true,
       }
     }

@@ -25,14 +25,16 @@ module.exports = {
         'xs': '320px'
       },
       borderRadius: {
-        '6px' : '0.375rem',
+        '6px': '0.375rem',
         '40px': '2.5rem',
         '42px': '2.625rem'
       },
       height: {
-        '280px' : '17.5rem'
+        '90px' : '5.625',
+        '280px' : '17.5rem',
       },
       width: {
+        '160px' : '10rem',
         '280px' : '17.5rem'
       }
 

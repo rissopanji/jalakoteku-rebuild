@@ -63,10 +63,8 @@ $(document).ready(function(){
     loop: true,
     margin: 50,
     center: true,
-    dots: false,
-    autoWidth: false,
-    autoHeight:false,
-    autoHeightClass: 'owl-height',
+    dots: true,
+    autoHeight:true,
     responsive: {
       0 : {
         items: 1,

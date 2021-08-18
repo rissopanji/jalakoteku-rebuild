@@ -2,6 +2,13 @@
   max-width: 1094px;
 }
 
+#home4.owl-carousel .owl-stage-outer {
+  height: calc(100% + 30px);
+  margin: -15px;
+  padding: 15px;
+  width: calc(100% + 30px);
+}
+
 .owl-prev {
   left: 5px;
 }
@@ -10,19 +17,22 @@
   right: 5px;
 }
 
-#home1 .owl-prev, #home1 .owl-next {
+#home1 .owl-prev,
+#home1 .owl-next {
   background-color: transparent !important;
   position: absolute;
   top: 35%;
 }
 
-#home2 .owl-prev, #home2 .owl-next {
+#home2 .owl-prev,
+#home2 .owl-next {
   background-color: transparent !important;
   position: absolute;
   top: 30%;
 }
 
-.owl-prev span, .owl-next span {
+.owl-prev span,
+.owl-next span {
   font-size: 40px;
   color: #756B5E;
 }
@@ -30,8 +40,10 @@
 /* PHONE SCREEN */
 @media (max-width: 1023px) {
   .h-main {
-    min-height: calc(100vh - 892px); /* 72 + 252 = 324 */
+    min-height: calc(100vh - 892px);
+    /* 72 + 252 = 324 */
   }
+
   .nav-active {
     color: #333333;
     background-color: #D9D7D4;
@@ -40,9 +52,11 @@
 
 /* DESKTOP SCREEN */
 @media (min-width: 1024px) {
+
   /* MINIMUM HEIGHT MAIN CONTENT IN DESKTOP SCREEN */
   .h-main {
-    min-height: calc(100vh - 252px); /* 72 + 252 = 324 */
+    min-height: calc(100vh - 252px);
+    /* 72 + 252 = 324 */
   }
 
   .nav-active {

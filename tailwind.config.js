@@ -19,7 +19,7 @@ module.exports = {
         black0: "#333333",
       },
       fontFamily: {
-        inter: ['Inter']
+        inter: ['Inter', 'sans-serif']
       },
       screens: {
         'xs': '320px'

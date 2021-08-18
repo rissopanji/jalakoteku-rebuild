@@ -59,4 +59,24 @@ $(document).ready(function(){
       }
     }
   });
+  $('#home4.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 50,
+    center: true,
+    dots: false,
+    autoWidth: false,
+    autoHeight:false,
+    autoHeightClass: 'owl-height',
+    responsive: {
+      0 : {
+        items: 1,
+      },
+      680 : {
+        items: 2,
+      },
+      1024 : {
+        items:3,
+      }
+    }
+  });
 });

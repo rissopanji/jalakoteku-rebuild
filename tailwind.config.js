@@ -23,7 +23,19 @@ module.exports = {
       },
       screens: {
         'xs': '320px'
+      },
+      borderRadius: {
+        '6px' : '0.375rem',
+        '40px': '2.5rem',
+        '42px': '2.625rem'
+      },
+      height: {
+        '280px' : '17.5rem'
+      },
+      width: {
+        '280px' : '17.5rem'
       }
+
     },
   },
   variants: {

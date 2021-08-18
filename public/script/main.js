@@ -62,7 +62,7 @@ $(document).ready(function(){
   $('#home4.owl-carousel').owlCarousel({
     loop: true,
     margin: 50,
-    center: true,
+    center: false,
     dots: true,
     autoHeight:true,
     responsive: {

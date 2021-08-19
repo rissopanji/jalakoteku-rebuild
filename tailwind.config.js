@@ -22,26 +22,37 @@ module.exports = {
         inter: ['Inter', 'sans-serif']
       },
       screens: {
-        'xs': '320px'
+        'xs': '320px',
+        '540' : '540px'
       },
       borderRadius: {
         '6px': '0.375rem',
+        '16px': '1rem',
         '20px' : '1.25rem',
         '40px': '2.5rem',
         '42px': '2.625rem'
       },
       height: {
-        '90px' : '5.625',
+        '52px' : '3.25rem',
+        '90px' : '5.625rem',
+        '200px' : '12.5rem',
+        '410px' : '410px',
         '280px' : '17.5rem',
         '360px' : '22.5rem'
       },
       width: {
         '160px' : '10rem',
+        '200px' : '12.5rem',
         '280px' : '17.5rem',
         '600px' : '37.5rem',
         '699px' : '43.6875rem',
+      },
+      gap: {
+        '30px' : '1.875rem'
+      },
+      fontSize: {
+        '10px' : '10px'
       }
-
     },
   },
   variants: {

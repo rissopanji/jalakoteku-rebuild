@@ -59,10 +59,10 @@
             <!-- DESKTOP MENU -->
             <div class="hidden lg:flex gap-6 lg:gap-12 items-center">
               <div class="flex space-x-12">
-                <a href="#" class="block  hover:text-black0 text-gray3 nav-active" aria-current="page">
+                <a href="#" class="block  hover:text-black0 text-gray3" aria-current="page">
                   Home
                 </a>
-                <a href="#" class="block hover:text-black0 text-gray3">
+                <a href="#" class="block hover:text-black0 text-gray3 nav-active">
                   Product
                 </a>
                 <a href="#" class="block hover:text-black0 text-gray3">
@@ -103,10 +103,10 @@
         </div>
         <!-- DROPDOWN MENU -->
         <div id="menu" class="hidden lg:hidden space-y-1 py-4">
-          <a href="#" class="block  hover:bg-gray2 hover:text-black0 rounded-lg p-2 text-gray3 nav-active">
+          <a href="#" class="block  hover:bg-gray2 hover:text-black0 rounded-lg p-2 text-gray3">
             Home
           </a>
-          <a href="#" class="block hover:bg-gray2 hover:text-black0 rounded-lg p-2 text-gray3">
+          <a href="#" class="block hover:bg-gray2 hover:text-black0 rounded-lg p-2 text-gray3 nav-active">
             Product
           </a>
           <a href="#" class="block hover:bg-gray2 hover:text-black0 rounded-lg p-2 text-gray3">
@@ -126,10 +126,10 @@
 
   <!-- MAIN -->
   <main id="main" class="h-main lg:pt-20 text-gray3">
-    <div class="w-container mx-auto pt-0 lg:pt-12 pb-16 px-2 space-y-10 lg:space-y-24">
+    <div class="w-container mx-auto pt-0 lg:pt-12 pb-16 px-2 lg:px-0 space-y-10 lg:space-y-24">
       <!-- Section 1 -->
       <section>
-        <div class="mt-5 md:mt-0" >
+        <div class="mt-10 lg:mt-0">
           <h1 class="font-semibold text-center text-3xl md:text-4xl capitalize">Rasakan Cemilan Ternikmat!</h1>
         </div>
         <div class="md:h-360px md:w-699px mx-auto mt-8 md:mt-14">
@@ -150,6 +150,96 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- LIST PRODUCT -->
+      <section>
+        <div class="grid grid-cols-3 xs:grid-cols-6 md:grid-cols-9 lg:grid-cols-12 gap-2 540:gap-30px">
+          <!-- Product -->
+          <div class="col-span-3 bg-white rounded-xl 540:rounded-20px px-4 py-3 540:px-7 540:py-5 relative">
+            <div class=" overflow-ellipsis overflow-hidden">
+              <img id="product-img" src="../assets/images/Product - Tahu Ori.png" alt="" class="rounded-16px">
+              <div id="product-detail" class="mt-2">
+                <h3 id="detail-tittle" class="font-semibold text-base 540:text-2xl capitalize leading-tight">
+                  Jalakotek
+                </h3>
+                <h5 class="text-sm 540:text-xl font-semibold capitalize leading-tight mt-0 540:mt-1">
+                  Tahu Ori
+                </h5>
+                <p class="text-10px 540:text-sm h-10 sm:h-16 leading-tight mt-1 540:mt-2">
+                  Jalakotek isi tahu dengan rasa rempah original. Renyah dan gurih
+                </p>
+              </div>
+            </div>
+            <div class="text-center 540:text-right mt-0 540:mt-4">
+              <a href="#" class="text-xs 540:text-base text-gray0 px-1 py-1 540:px-3 540:py-1 bg-orange2 rounded 540:rounded-6px btn-product"><span>Cari Toko Terdekat</span></a>
+            </div>
+          </div>
+          <!-- !Product -->
+          <!-- Product -->
+          <div class="col-span-3 bg-white rounded-xl 540:rounded-20px px-4 py-3 540:px-7 540:py-5 relative">
+            <div class=" overflow-ellipsis overflow-hidden">
+              <img id="product-img" src="../assets/images/Product - Ayam Ori.png" alt="" class="rounded-16px">
+              <div id="product-detail" class="mt-2">
+                <h3 id="detail-tittle" class="font-semibold text-base 540:text-2xl capitalize leading-tight">
+                  Jalakotek
+                </h3>
+                <h5 class="text-sm 540:text-xl font-semibold capitalize leading-tight mt-0 540:mt-1">
+                  Ayam Ori
+                </h5>
+                <p class="text-10px 540:text-sm h-10 sm:h-16 leading-tight mt-1 540:mt-2">
+                  Rasa ayam yang sangat menggigit hingga bertelur lagi.
+                </p>
+              </div>
+            </div>
+            <div class="text-center 540:text-right mt-0 540:mt-4">
+              <a href="#" class="text-xs 540:text-base text-gray0 px-1 py-1 540:px-3 540:py-1 bg-orange2 rounded 540:rounded-6px btn-product"><span>Cari Toko Terdekat</span></a>
+            </div>
+          </div>
+          <!-- !Product -->
+          <!-- Product -->
+          <div class="col-span-3 bg-white rounded-xl 540:rounded-20px px-4 py-3 540:px-7 540:py-5 relative">
+            <div class=" overflow-ellipsis overflow-hidden">
+              <img id="product-img" src="../assets/images/Product - Tahu Rica.png" alt="" class="rounded-16px">
+              <div id="product-detail" class="mt-2">
+                <h3 id="detail-tittle" class="font-semibold text-base 540:text-2xl capitalize leading-tight">
+                  Jalakotek
+                </h3>
+                <h5 class="text-sm 540:text-xl font-semibold capitalize leading-tight mt-0 540:mt-1">
+                  Tahu rica
+                </h5>
+                <p class="text-10px 540:text-sm h-10 sm:h-16 leading-tight mt-1 540:mt-2">
+                  Jalakotek isi tahu dengan rica rica. Renyah dan pedas
+                </p>
+              </div>
+            </div>
+            <div class="text-center 540:text-right mt-0 540:mt-4">
+              <a href="#" class="text-xs 540:text-base text-gray0 px-1 py-1 540:px-3 540:py-1 bg-orange2 rounded 540:rounded-6px btn-product"><span>Cari Toko Terdekat</span></a>
+            </div>
+          </div>
+          <!-- !Product -->
+          <!-- Product -->
+          <div class="col-span-3 bg-white rounded-xl 540:rounded-20px px-4 py-3 540:px-7 540:py-5 relative">
+            <div class=" overflow-ellipsis overflow-hidden">
+              <img id="product-img" src="../assets/images/Product - Ayam Ori.png" alt="" class="rounded-16px">
+              <div id="product-detail" class="mt-2">
+                <h3 id="detail-tittle" class="font-semibold text-base 540:text-2xl capitalize leading-tight">
+                  Jalakotek
+                </h3>
+                <h5 class="text-sm 540:text-xl font-semibold capitalize leading-tight mt-0 540:mt-1">
+                  Ayam Rica
+                </h5>
+                <p class="text-10px 540:text-sm h-10 sm:h-16 leading-tight mt-1 540:mt-2">
+                  Jalakotek isi ayam dengan rasa rempah original. Renyah dan gurih
+                </p>
+              </div>
+            </div>
+            <div class="text-center 540:text-right mt-0 540:mt-4">
+              <a href="#" class="text-xs 540:text-base text-gray0 px-1 py-1 540:px-3 540:py-1 bg-orange2 rounded 540:rounded-6px btn-product"><span>Cari Toko Terdekat</span></a>
+            </div>
+          </div>
+          <!-- !Product -->
         </div>
       </section>
     </div>

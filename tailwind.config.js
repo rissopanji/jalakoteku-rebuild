@@ -23,6 +23,7 @@ module.exports = {
       },
       screens: {
         'xs': '320px',
+        '320' : '320px',
         '540' : '540px'
       },
       borderRadius: {

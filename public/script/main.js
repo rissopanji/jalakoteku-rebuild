@@ -77,4 +77,15 @@ $(document).ready(function(){
       }
     }
   });
+
+  // Product Page
+  $('#product-banner.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 50,
+    center: false,
+    dots: false,
+    autoHeight:true,
+    items: 1,
+    nav: true
+  });
 });

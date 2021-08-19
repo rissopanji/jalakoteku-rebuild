@@ -9,6 +9,13 @@
   width: calc(100% + 30px);
 }
 
+#product-banner.owl-carousel .owl-stage-outer {
+  height: calc(100% + 30px);
+  margin: -15px;
+  padding: 15px;
+  width: calc(100% + 30px);
+}
+
 .owl-prev {
   left: 5px;
 }
@@ -29,6 +36,18 @@
   background-color: transparent !important;
   position: absolute;
   top: 30%;
+}
+#product-banner .owl-item img {
+  max-width: 600px;
+  max-height: 360px;
+}
+
+#product-banner .owl-prev,
+#product-banner .owl-next {
+  background-color: transparent !important;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .owl-prev span,

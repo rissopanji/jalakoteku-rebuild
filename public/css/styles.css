@@ -1,8 +1,15 @@
 .w-container {
-  max-width: 1094px;
+  max-width: 1110px;
 }
 
 #home4.owl-carousel .owl-stage-outer {
+  height: calc(100% + 30px);
+  margin: -15px;
+  padding: 15px;
+  width: calc(100% + 30px);
+}
+
+#product-banner.owl-carousel .owl-stage-outer {
   height: calc(100% + 30px);
   margin: -15px;
   padding: 15px;
@@ -30,11 +37,55 @@
   position: absolute;
   top: 30%;
 }
+#product-banner .owl-item img {
+  max-width: 600px;
+  max-height: 360px;
+}
+
+#product-banner .owl-height {
+  transition: none;
+}
+
+#product-banner .owl-prev,
+#product-banner .owl-next {
+  background-color: transparent !important;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 .owl-prev span,
 .owl-next span {
   font-size: 40px;
   color: #756B5E;
+}
+
+@media (min-width: 540px) {
+  .btn-product span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .btn-product span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .btn-product:hover span {
+    padding-right: 25px;
+    color: #FFFFFF;
+  }
+  
+  .btn-product:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
 }
 
 /* PHONE SCREEN */
